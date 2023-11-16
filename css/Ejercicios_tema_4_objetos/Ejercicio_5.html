@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+
+    //  Ejercicio 5: Pide que el usuario introduzca una frase y posteriormente una palabra que se halle en dicha frase. 
+    //  Debes contar cuántas veces aparece la palabra en la frase y mostrar esa información al usuario. 
+
+
+    var frase = prompt("Dame una frase");
+    var palabra = prompt("Dame una palabra que se halle en la frase");
+    var veces = 0; 
+    i = 0;
+    
+    while (i < frase.length) {
+        if(frase[i] == palabra){
+            veces += 1;
+        }
+        i += 1;
+    }
+    
+    document.write(`La palabra ${palabra} se repite ${veces} veces <br>`)
+    </script>
+</body>
+</html>

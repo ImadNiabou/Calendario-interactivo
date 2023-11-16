@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Calendario></title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calendario Interactivo</h1>
+        <h3></h3>
+        <div class="background">
+            <div class="calendar">
+                <div class="calendar__info">
+                    <div class="calendar__prev" id="prev-month"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="calendar__month" id="month"></div>
+                    <div class="calendar__year" id="year"></div>
+                    <div class="calendar__next" id="next-month"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+
+                <div class="calendar__week">
+                    <div class="calendar__day calendar__item">Mon</div>
+                    <div class="calendar__day calendar__item">Tue</div>
+                    <div class="calendar__day calendar__item">Wed</div>
+                    <div class="calendar__day calendar__item">Thu</div>
+                    <div class="calendar__day calendar__item">Fri</div>
+                    <div class="calendar__day calendar__item">Sat</div>
+                    <div class="calendar__day calendar__item">Sun</div>
+                </div>
+                <div class="calendar__dates" id="dates"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

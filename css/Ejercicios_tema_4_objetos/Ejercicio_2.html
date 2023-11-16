@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <script>
+
+        /* Ejercicio 2: Pide al usuario (mediante un prompt) el tamaño de los 2 catetos de un triángulo rectángulo
+            (asegúrate de que el usuario introduce un número válido o insiste hasta que lo haga), y calcula el tamaño
+            de la hipotenusa (sabiendo que la hipotenusa es igual a la raíz cuadrada de la suma del cuadrado de los
+            catetos). */
+    
+
+    do {
+        var cateto1 = parseInt(prompt("dame el valor del primer cateto"));
+        var cateto2 = parseInt(prompt("dame el valor del segundo cateto"));
+        Math.hypot(cateto1, cateto2);
+        
+        console.log(Math.hypot(cateto1, cateto2));
+
+
+    } while (cateto1 <0 || cateto1 >20 && cateto2 <0 || cateto2 >20);
+
+        
+    </script>
+</body>
+</html>

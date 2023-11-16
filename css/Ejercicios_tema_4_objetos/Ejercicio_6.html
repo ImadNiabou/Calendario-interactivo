@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 6</title>
+</head>
+<body>
+    <script>
+    // Ejercicio 6: Crea (y pon en práctica) una expresión regular que permita validar un DNI con el formato 12345678-A. 
+
+
+        var expresion = /^\d{8}[A-Z]$/;  /*  d signinfica digitos, y el $ al final significa qu la letra tiene que ser al final */
+        var resultado = texto.search(expresion);
+
+        document.write("Dni correcto: " + resultado + "<br>");
+
+    </script>
+</body>
+</html>

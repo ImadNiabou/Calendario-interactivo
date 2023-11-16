@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercio 7</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 7: Haz una página que muestre la fecha de actual en el siguiente formato: Miércoles, 1 de Enero de 2020. 
+        // La fecha debe de generarse de forma que si mañana abres el ejercicio con el navegador se tiene que ver la fecha de mañana. 
+        var fecha = new Date(); 
+        var hoy = new Date(fecha.getFullYear(), fecha.getMonth(), fecha.getDate()); 
+        document.write("<p>Hoy: " + hoy.toLocaleString() + "</p>"); 
+
+    </script>
+</body>
+</html>

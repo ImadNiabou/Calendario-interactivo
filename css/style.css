@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body  {
+    font-family: montserrat;
+    font-size: 1.2em;
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size:contain;
+        -webkit-animation: slidein 80s;
+        animation: slidein 80s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+.container{
+    background: linear-gradient(45deg, #223356, transparent);
+    height: 100vh;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 40px 0px 26px;
+    color: rgb(14 53 85);
+}
+
+.background{
+    opacity: .7;
+    width: 65%;
+    margin: 0 auto;
+    height: 70vh;
+    border-radius: 25px;
+    width: 40%;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgb(14 53 85);
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+
+.calendar{
+    z-index: 100;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.calendar__info{
+    display: flex;
+    align-items: center;
+}
+
+.calendar__next, .calendar__prev{
+    color: rgb(14 53 85);
+}
+
+.calendar__prev{
+    margin-right: auto;
+}
+
+.calendar__next{
+    margin-left: auto;
+}
+
+.calendar__week, .calendar__dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+}
+
+.calendar__day calendar__item{
+    text-align: center;
+    line-height: 2px;
+}
+
+.calendar__dates{
+    margin: 40px 0px;
+}
+
+.calendar__month, .calendar__year{
+    padding: 2em 1em;
+    font-size: 1.2em;
+    color: #ffddb1;
+}
+
+.calendar__today{
+    color: rgb(14 53 85);
+    font-weight: bold; 
+}
+
+
+.calendar__last-days{
+    opacity: .3;
+}
+
+
+/* animation body */
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
